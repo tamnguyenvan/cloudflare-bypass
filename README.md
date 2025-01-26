@@ -56,3 +56,6 @@ Email: tamnv.work@gmail.com
 ```
 
 Feel free to open issues or contribute to the project on GitHub.
+
+## Support My Side Project
+- [IconFst](https://iconfst.com)
