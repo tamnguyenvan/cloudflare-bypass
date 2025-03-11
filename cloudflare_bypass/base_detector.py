@@ -5,7 +5,7 @@ import numpy as np
 
 
 class BaseDetector:
-    def __init__(self, template_path: str, threshold: float = 0.5) -> None:
+    def __init__(self, template_path: str, threshold: float = 0.8) -> None:
         """
         Initializes the BaseDetector with a template image and a matching threshold.
 
