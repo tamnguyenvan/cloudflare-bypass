@@ -12,7 +12,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='cloudflare-bypass',
-    version='0.1.1',
+    version='0.1.2',
     description='A tool for bypassing Cloudflare CAPTCHA',
     long_description=long_description,
     long_description_content_type='text/markdown',
