@@ -49,6 +49,7 @@ def bypass(
     warmup_time: int = None,
     timeout: int = 20,
     interval: int = 1,
+    threshold: float = 0.8,
 ):
     """
     Bypass CloudFlare challenges by clicking on the detected popup.
@@ -58,6 +59,7 @@ def bypass(
         - warmup_time (int or None): Optional warm-up time before starting to detect.
         - timeout (int): Maximum time to wait for the CloudFlare logo to disappear after clicking the popup.
         - interval (int): Time interval between successive detections (default: 1 second).
+        - threshold (float): Detection threshold for the CloudFlare logo and popup. Default is 0.8.
 
     Returns:
         - bool: True if the logo disappears within the timeout, else False.
@@ -67,8 +69,8 @@ def bypass(
         time.sleep(warmup_time)
 
     # Initialize CloudFlare detectors with the specified mode
-    cf_popup_detector = CloudFlarePopupDetector(mode=mode)
-    cf_logo_detector = CloudFlareLogoDetector(mode=mode)
+    cf_popup_detector = CloudFlarePopupDetector(mode=mode, threshold=threshold)
+    cf_logo_detector = CloudFlareLogoDetector(mode=mode, threshold=threshold)
 
     t0 = time.time()
     clicked = False
