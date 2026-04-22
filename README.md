@@ -1,6 +1,3 @@
-> **🔥 Need background removal for your app? Try my API — RemovebgAPI (https://removebgapi.com).  
-Same quality as premium services, but ~20x cheaper — only $0.001/image!**
-
 # Cloudflare CAPTCHA Bypass
 
 <div style="text-align: center; margin-bottom: 50px">
